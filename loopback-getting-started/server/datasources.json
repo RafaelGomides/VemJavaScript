@@ -1,0 +1,12 @@
+{
+  "loopbackMysql": {
+    "host": "localhost",
+    "port": 3306,
+    "url": "mysql://bel:zebu@localhost/loopback",
+    "database": "loopback",
+    "password": "zebu",
+    "name": "loopbackMysql",
+    "user": "bel",
+    "connector": "mysql"
+  }
+}
