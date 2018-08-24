@@ -1,0 +1,12 @@
+{
+  "RaimundoSchool": {
+    "host": "localhost",
+    "port": 3306,
+    "url": "",
+    "database": "raischool",
+    "password": "zebu",
+    "name": "RaimundoSchool",
+    "user": "bel",
+    "connector": "mysql"
+  }
+}

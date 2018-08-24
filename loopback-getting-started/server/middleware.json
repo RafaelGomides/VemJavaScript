@@ -13,9 +13,9 @@
       },
       "helmet#xssFilter": {},
       "helmet#frameguard": {
-         "params": {
-            "action": "deny"
-         }
+         "params": [
+            "deny"
+         ]
       },
       "helmet#hsts": {
          "params": {
