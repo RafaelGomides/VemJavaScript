@@ -20,10 +20,32 @@
       "model": "Order",
       "foreignKey": "customerId"
     },
-    "addresses": {
-      "type": "hasOne",
+    "address": {
+      "type": "embedsOne",
       "model": "Address",
-      "foreignKey": ""
+      "property": "billingAddress",
+      "options": {
+        "validate": true,
+        "forceId": false
+      }
+    },
+    "emails": {
+      "type": "embedsMany",
+      "model": "EmailAddress",
+      "property": "emailList",
+      "options": {
+        "validate": true,
+        "forceId": false
+      }
+    },
+    "accounts": {
+      "type": "referencesMany",
+      "model": "Account",
+      "property": "accountIds",
+      "options": {
+        "validate": true,
+        "forceId": false
+      }
     }
   },
   "acls": [],
