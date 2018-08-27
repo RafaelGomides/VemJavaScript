@@ -20,5 +20,45 @@
   "Course": {
     "dataSource": "RaimundoSchool",
     "public": true
+  },
+  "Customer": {
+    "dataSource": "RaimundoSchool",
+    "public": true
+  },
+  "Order": {
+    "dataSource": "RaimundoSchool",
+    "public": true
+  },
+  "Account": {
+    "dataSource": "RaimundoSchool",
+    "public": false
+  },
+  "Address": {
+    "dataSource": "RaimundoSchool",
+    "public": false
+  },
+  "Author": {
+    "dataSource": "RaimundoSchool",
+    "public": false
+  },
+  "Book": {
+    "dataSource": "RaimundoSchool",
+    "public": true
+  },
+  "EmailAddress": {
+    "dataSource": "RaimundoSchool",
+    "public": false
+  },
+  "Link": {
+    "dataSource": "RaimundoSchool",
+    "public": false
+  },
+  "Reader": {
+    "dataSource": "RaimundoSchool",
+    "public": false
+  },
+  "Shipment": {
+    "dataSource": "RaimundoSchool",
+    "public": false
   }
 }
