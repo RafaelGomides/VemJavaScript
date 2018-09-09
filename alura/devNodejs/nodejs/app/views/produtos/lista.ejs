@@ -13,14 +13,20 @@
 			<thead>
 				<tr>
 					<th>ID</th>
-					<th>Nome</th>
+					<th>Titulo</th>
+					<th>Descrição</th>
+					<th>Preço</th>
 				</tr>
 			</thead>
 			<tbody>
-				<tr>
-					<td>1</td>
-					<td>Livro de NodeJs</td>
-				</tr>
+				<%for(let i=0; i<lista.length; i++) {%>
+					<tr>
+						<td><%= lista[i].idBook %></td>
+						<td><%= lista[i].title %></td>
+						<td><%= lista[i].description %></td>
+						<td><%= lista[i].price %></td>
+					</tr>
+				<%}%>
 			</tbody>
 		</table>
 	</main>

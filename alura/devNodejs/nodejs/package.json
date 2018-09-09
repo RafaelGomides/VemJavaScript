@@ -11,6 +11,9 @@
   "dependencies": {
     "ejs": "^2.6.1",
     "express": "^4.16.3",
+    "express-load": "^1.1.16",
+    "install": "^0.12.1",
+    "mysql": "^2.16.0",
     "nodemon": "^1.18.4"
   }
 }
