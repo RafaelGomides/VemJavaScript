@@ -7,7 +7,7 @@ botao.addEventListener("click", function(e) {
     setTable(
         setTr(
             getPaciente(
-                form;
+                form
             )
         )
     );
@@ -35,6 +35,11 @@ function setTd(argument, csclass) {
 function setTr(paciente) {
     let pacienteTr = document.createElement("tr");
     pacienteTr.classList.add("paciente");
+
+    if (!validData(paciente.peso, paciente.altura)) {
+        alert("Verifique as insformações inseridas")
+        return;
+    }
 
     pacienteTr.appendChild(setTd(paciente.nome, "info-nome"));
     pacienteTr.appendChild(setTd(paciente.altura, "info-peso"));
