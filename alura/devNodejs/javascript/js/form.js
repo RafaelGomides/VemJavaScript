@@ -3,17 +3,20 @@ botao.addEventListener("click", function(e) {
     e.preventDefault();
 
     let form = document.querySelector("#formAdicionar");
+    let paciente = getPaciente(form);
 
-    setTable(
-        setTr(
-            getPaciente(
-                form
-            )
-        )
-    );
+    addPaciente(paciente);
 
     form.reset();
 });
+
+function addPaciente(paciente) {
+    setTable(
+        setTr(
+            paciente
+        )
+    );
+}
 
 function getPaciente(form) {
     return {
