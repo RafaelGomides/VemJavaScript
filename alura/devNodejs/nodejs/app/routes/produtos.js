@@ -4,8 +4,15 @@ module.exports = function(app) {
         const prodBanco = new app.db.ProdutosDAO(conn);
 
         prodBanco.lista(function(err, ret) {
-            res.render('produtos/lista', {
-                lista: ret
+            res.format({
+                html: function() {
+                    res.render('produtos/lista', {
+                        lista: ret
+                    });
+                },
+                json: function() {
+                    res.json(ret);
+                }
             });
         });
         conn.end();
