@@ -1,6 +1,7 @@
 const express = require('express');
 const load = require('express-load');
 const bodyParser = require('body-parser');
+const expressValidator = require('express-validator');
 
 module.exports = function() {
     let app = express();
@@ -10,6 +11,7 @@ module.exports = function() {
         extended: true
     }));
     app.use(bodyParser.json());
+    app.use(expressValidator());
 
     load('routes', {
         cwd: 'app'

@@ -6,9 +6,9 @@ module.exports = function() {
 function dbConnection() {
     return mysql.createConnection({
         host: 'localhost',
-        user: 'root',
+        user: 'bel',
         port: 3306,
-        password: '',
+        password: 'zebu',
         database: 'nodejs'
     });
 }

@@ -8,15 +8,25 @@
 </head>
 <body>
 	<main>
+		<div class="error">
+			<%= console.log(product)%>
+			<% if (validationError) {%>
+				<ul>
+					<%for (var i=0; i<validationError.length; i++){%>
+						<li><%= validationError[i].param %> - <%= validationError[i].msg %></li>
+					<%}%>
+				</ul>
+			<%}%>
+		</div>
 		<form action="/produtos" method="post" accept-charset="utf-8">
 			<div>
-				<label>Titulo: <input type="text" name="title" id="title" value="" placeholder="Informe o titulo"></label>
+				<label>Titulo: <input type="text" name="title" id="title" value="<%= product.title %>" placeholder="Informe o titulo"></label>
 			</div>
 			<div>
-				<label>Descrição: <textarea type="text" name="description" id="description" value="" placeholder="Informe a descrição"></textarea></label>
+				<label>Descrição: <textarea type="text" name="description" id="description" value="" placeholder="Informe a descrição"><%= product.description %></textarea></label>
 			</div>
 			<div>
-				<label>Preço: <input type="text" name="price" id="price" value="" placeholder="Informe o valor"></label>
+				<label>Preço: <input type="text" name="price" id="price" value="<%= product.price %>" placeholder="Informe o valor"></label>
 			</div>
 
 			<input type="submit" name="" value="record">
