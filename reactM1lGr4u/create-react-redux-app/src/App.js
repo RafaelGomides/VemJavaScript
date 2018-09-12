@@ -44,5 +44,5 @@ const mapStateToProps = store => ({
 
 const mapDispatchToProps = dispatch =>
   bindActionCreators({ clickButton }, dispatch);
-  
+
 export default connect(mapStateToProps, mapDispatchToProps)(App);
