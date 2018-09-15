@@ -17,5 +17,9 @@
     "install": "^0.12.1",
     "mysql": "^2.16.0",
     "nodemon": "^1.18.4"
+  },
+  "devDependencies": {
+    "mocha": "^5.2.0",
+    "supertest": "^3.3.0"
   }
 }
