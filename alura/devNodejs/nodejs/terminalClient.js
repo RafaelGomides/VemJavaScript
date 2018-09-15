@@ -19,9 +19,9 @@ const client = http.request(conf, function(res) {
 
 
 const produto = {
-    title: "THE SATAN PRAYER",
-    description: "A way to be eternal",
-    price: 66.99
+    title: "FILHO DA PUTA",
+    description: "TE COMEU",
+    price: 66
 }
 
 client.end(JSON.stringify(produto));
