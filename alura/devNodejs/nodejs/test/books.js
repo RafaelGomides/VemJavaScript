@@ -36,7 +36,7 @@ describe('#BooksController', function() {
         request.post('/produtos')
             .send({
                 title: "title",
-                description: "dsdsd",
+                description: "description",
                 price: 99
             })
             .expect(302, done);
