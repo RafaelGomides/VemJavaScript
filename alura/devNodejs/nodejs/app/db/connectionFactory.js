@@ -4,11 +4,23 @@ module.exports = function() {
 }
 
 function dbConnection() {
-    return mysql.createConnection({
-        host: 'localhost',
-        user: 'bel',
-        port: 3306,
-        password: 'zebu',
-        database: 'nodejs'
-    });
+    if (!process.env.NODE_ENV) {
+        return mysql.createConnection({
+            host: 'localhost',
+            user: 'root',
+            port: 3306,
+            password: '',
+            database: 'nodejs'
+        });
+    }
+
+    if (process.env.NODE_ENV == 'stage') {
+        return mysql.createConnection({
+            host: 'localhost',
+            user: 'root',
+            port: 3306,
+            password: '',
+            database: 'nodejs_stage'
+        });
+    }
 }
